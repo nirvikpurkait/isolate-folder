@@ -4,6 +4,12 @@ All notable changes to the "Isolate Folder" extension will be documented in this
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [Unreleased]() - 2025-02-15
+
+### Added
+
+- Logo
+
 ## [0.0.1]() - 2025-02-15
 
 ### Added

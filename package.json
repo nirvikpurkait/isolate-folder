@@ -32,6 +32,7 @@
   "categories": [
     "Visualization"
   ],
+  "icon": "assets/icons/logo.png",
   "activationEvents": [
     "onStartupFinished"
   ],
