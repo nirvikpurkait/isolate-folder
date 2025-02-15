@@ -2,22 +2,30 @@
   "name": "isolate-folder",
   "displayName": "Isolate Folder",
   "description": "Isolate the necessary file within workspace.",
+  "version": "0.0.1",
   "publisher": "nirvikpurkait",
   "repository": {
     "type": "git",
     "url": "https://github.com/nirvikpurkait/isolate-folder.git"
   },
-  "license": "MIT",
-  "keywords": [
-    "isolate",
-    "folder",
-    "isolate folder",
-    "folder isolate"
-  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "build": "rimraf ./out && vsce package",
+    "lint:staged": "lint-staged",
+    "test": "vscode-test",
+    "format": "prettier --write ./*",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "./*": "npm run format"
+  },
   "author": {
     "name": "Nirvik Purkait"
   },
-  "version": "0.0.0",
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -44,21 +52,6 @@
       ]
     }
   },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "build": "rimraf ./out && vsce package",
-    "lint:staged": "lint-staged",
-    "test": "vscode-test",
-    "format": "prettier --write ./*",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "./*": "npm run format"
-  },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
@@ -74,5 +67,12 @@
     "prettier": "^3.5.1",
     "rimraf": "^6.0.1",
     "typescript": "^5.7.3"
-  }
+  },
+  "keywords": [
+    "isolate",
+    "folder",
+    "isolate folder",
+    "folder isolate"
+  ],
+  "license": "MIT"
 }
