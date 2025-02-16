@@ -4,13 +4,14 @@ All notable changes to the "Isolate Folder" extension will be documented in this
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
-## [Unreleased]() - 2025-02-15
+## [Unreleased]() - [YYYY-MM-DD]
 
 ### Added
 
 - Logo
+- `publish` script. Use `npm run publish` to publish extension.
 
-## [0.0.1]() - 2025-02-15
+## [0.0.1](https://github.com/nirvikpurkait/isolate-folder/releases/tag/v0.0.1) - 2025-02-15
 
 ### Added
 

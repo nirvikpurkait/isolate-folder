@@ -9,15 +9,18 @@
     "url": "https://github.com/nirvikpurkait/isolate-folder.git"
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "build": "rimraf ./out && vsce package",
-    "lint:staged": "lint-staged",
-    "test": "vscode-test",
     "format": "prettier --write ./*",
+    "lint": "eslint src",
+    "lint:staged": "lint-staged",
+    "build": "run-s clear:build generate:ext",
+    "clear:build": "rimraf ./out",
+    "generate:ext": "vsce package",
+    "pretest": "npm run compile && npm run lint",
+    "test": "vscode-test",
+    "vscode:prepublish": "npm run compile",
+    "publish": "vsce publish",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -65,6 +68,7 @@
     "eslint": "^9.19.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.5.1",
     "rimraf": "^6.0.1",
     "typescript": "^5.7.3"
