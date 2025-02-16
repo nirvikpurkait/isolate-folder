@@ -2,7 +2,7 @@
   "name": "isolate-folder",
   "displayName": "Isolate Folder",
   "description": "Isolate the necessary file within workspace.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "nirvikpurkait",
   "repository": {
     "type": "git",

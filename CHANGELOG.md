@@ -4,7 +4,9 @@ All notable changes to the "Isolate Folder" extension will be documented in this
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
-## [Unreleased]() - [YYYY-MM-DD]
+<!-- ## [Unreleased](https://github.com/nirvikpurkait/isolate-folder/compare/v0.0.1...HEAD) - [YYYY-MM-DD] -->
+
+## [0.0.2](https://github.com/nirvikpurkait/isolate-folder/compare/V0.0.2...v0.0.1) - [2025-02-16]
 
 ### Added
 
